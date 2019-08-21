@@ -1,0 +1,26 @@
+html {
+  box-sizing: border-box;
+}
+
+.header-img {
+  background: url('./headerimg3.jpg') center;
+}
+.fixed-right {
+  position: fixed;
+  right: 0;
+}
+.absolute {
+  position: absolute;
+}
+.aside-img {
+  opacity: 0;
+}
+.pt-20 {
+  padding-top: 20vh;
+}
+.z-index-2 {
+  z-index: 2
+}
+.mt-50 {
+  margin-top: 50vh;
+}
