@@ -3,7 +3,7 @@ html {
 }
 
 .header-img {
-  background: url('./headerimg3.jpg') center;
+  background: url("./headerimg3.jpg") center;
 }
 .fixed-right {
   position: fixed;
@@ -11,6 +11,7 @@ html {
 }
 .absolute {
   position: absolute;
+  z-index: -3;
 }
 .aside-img {
   opacity: 0;
@@ -19,8 +20,89 @@ html {
   padding-top: 20vh;
 }
 .z-index-2 {
-  z-index: 2
+  z-index: 2;
 }
 .mt-50 {
   margin-top: 50vh;
 }
+
+/* Sebbes Css---------------------------------------------------------------------------- */
+ul {
+  z-index: 3;
+  list-style: none;
+}
+
+.menuHide {
+  position: absolute;
+  /* opacity: 0; */
+  left: -10%;
+}
+
+.menuShow {
+  font-size: 300%;
+  transition: 1s;
+  z-index: 3;
+  animation: "menuText";
+  animation-duration: 3s;
+}
+
+.menu {
+  z-index: 3;
+}
+
+li {
+  z-index: 3;
+}
+
+a {
+  z-index: 3;
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: none;
+}
+@keyframes menuText {
+  from {
+    left: -100;
+  }
+  to {
+    left: 100;
+  }
+}
+
+a {
+  text-decoration: none;
+  z-index: 3;
+}
+
+#menuButton {
+  display: inline-block;
+  background-color: black;
+  color: white;
+  opacity: 0.7;
+  z-index: 3;
+  position: fixed;
+}
+
+.draperi {
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-color: red;
+  width: 0%;
+  transition: width 2s;
+  height: 100vh;
+  z-index: -1;
+}
+
+.draperiCover {
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  background: red;
+  transition: width 2s;
+  z-index: -1;
+}
+
+/* --------------------------------------------------------------------------- */
