@@ -1,5 +1,6 @@
 html {
   box-sizing: border-box;
+  scroll-behavior: smooth;
 }
 
 .header-img {
@@ -20,9 +21,6 @@ html {
 }
 .z-index-2 {
   z-index: 2
-}
-.mt-50 {
-  margin-top: 50vh;
 }
 
 .pct{
@@ -59,3 +57,12 @@ html {
  -webkit-text-stroke-color: red;
 }
 
+.mt-50 {
+  margin-top: 10vh;
+}
+}
+#down-arrow {
+  position: absolute;
+  bottom: 20px;
+  left: 37.5%;
+}

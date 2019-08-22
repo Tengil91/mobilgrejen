@@ -11,21 +11,21 @@ function hideHeader(){
   anime({
     targets: headerImg,
     opacity: 0,
-    duration: 800,
+    duration: 400,
     easing: 'linear'
   })
   anime({
     targets: headerH1,
     opacity: 0,
     translateY: -100,
-    duration: 1000,
+    duration: 500,
     easing: 'linear'
   })
   anime({
     targets: headerP,
     opacity: 0,
     translateY: -50,
-    duration: 1000,
+    duration: 500,
     easing: 'linear'
   })
 }
@@ -35,7 +35,7 @@ function showHeader(){
   anime({
     targets: headerImg,
     opacity: 1,
-    duration: 800,
+    duration: 400,
     delay: 200,
     easing: 'linear'
   })
@@ -43,7 +43,7 @@ function showHeader(){
     targets: headerTexts,
     opacity: 1,
     translateY: 0,
-    duration: 1000,
+    duration: 500,
     easing: 'linear'
   })
 }
@@ -100,3 +100,4 @@ $(document).on("click","#go",function(){
       opacity:[0,1]
     });
   });
+
