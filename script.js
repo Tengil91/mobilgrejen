@@ -80,7 +80,6 @@ $(document).on("click","#go",function(){
   var tl = anime.timeline({
       easing: 'easeOutExpo',
       duration: 550,
-     
     });
     
     tl
