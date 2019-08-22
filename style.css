@@ -71,34 +71,51 @@ html {
 }
 
 .mt-50 {
-  margin-top: 50vh;
+  margin-top: 10vh;
 }
 
 /* Sebbes Css---------------------------------------------------------------------------- */
 ul {
-  z-index: 3;
   list-style: none;
 }
 
-.menuHide {
-  position: absolute;
-  /* opacity: 0; */
-  left: -10%;
+.hideElement {
+  animation-name: hide;
+  animation-duration: 1.5s;
+  animation-fill-mode: forwards;
 }
 
-.menuShow {
-  font-size: 300%;
-  transition: 1s;
-  z-index: 3;
-  animation: "menuText";
-  animation-duration: 3s;
+@keyframes hide {
+  from {
+    transform: translate(0px);
+  }
+  to {
+    transform: translate(2000px);
+  }
+}
+
+.showElement {
+  animation-name: show;
+  animation-duration: 1.5s;
+  animation-fill-mode: forwards;
+}
+
+@keyframes show {
+  from {
+    transform: translate(2000px);
+  }
+  to {
+    transform: translate(0px);
+  }
+}
+
+.menuHide {
+  position: fixed;
+  left: -10%;
+  top: 10%;
 }
 
 .menu {
-  z-index: 3;
-}
-
-li {
   z-index: 3;
 }
 
@@ -109,14 +126,6 @@ a {
 
 a:hover {
   text-decoration: none;
-}
-@keyframes menuText {
-  from {
-    left: -100;
-  }
-  to {
-    left: 100;
-  }
 }
 
 a {
@@ -131,26 +140,7 @@ a {
   opacity: 0.7;
   z-index: 3;
   position: fixed;
-}
-
-.draperi {
-  position: absolute;
-  top: 0;
-  left: 0;
-  background-color: red;
-  width: 0%;
-  transition: width 2s;
-  height: 100vh;
-  z-index: -1;
-}
-
-.draperiCover {
-  width: 100%;
-  height: 100%;
-  position: fixed;
-  background: red;
-  transition: width 2s;
-  z-index: -1;
+  font-size: 300%;
 }
 
 /* --------------------------------------------------------------------------- */

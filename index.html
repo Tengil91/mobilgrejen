@@ -14,7 +14,7 @@
   <body>
     <!-- menu crap vet inte vart den ska ligga i filen än... -->
 
-    <div id="menuButton">Menu</div>
+    <div id="menuButton"><a href="#">Menu</a></div>
 
     <div class="menu">
       <ul>
@@ -29,7 +29,7 @@
     <header class="w-100 vh-100">
       <div class="absolute pt-20 w-100 text-center header-texts z-index-2">
         <svg
-          class="pt-20"
+          class="hideMe pt-20"
           xmlns="http://www.w3.org/2000/svg"
           id="logo"
           viewBox="0 0 129.38 32.68"
@@ -60,13 +60,16 @@
           </g>
         </svg>
 
-        <p>A good iPhone that belongs in the past</p>
+        <p class="hideMe">A good iPhone that belongs in the past</p>
       </div>
-      <div class="vh-100 w-100 header-img"></div>
+
+      <div class="hideMe vh-100 w-100 header-img"></div>
+
       <a href="#go">
-        <img src="./downarrow.png" alt="" class="w-25" id="down-arrow" />
+        <img src="./downarrow.png" alt="" class="hideMe w-25" id="down-arrow" />
       </a>
     </header>
+
     <div class="container-fluid mt-50">
       <!-- fixed area (for the margins) -->
 
@@ -79,12 +82,14 @@
         </div>
       </main>
     </div>
+
     <script
       src="https://code.jquery.com/jquery-3.4.1.min.js"
       integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
       crossorigin="anonymous"
     ></script>
     <script src="./anime.min.js"></script>
+    <script src="menu.js"></script>
     <script src="script.js"></script>
   </body>
 </html>
