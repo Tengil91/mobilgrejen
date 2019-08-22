@@ -13,9 +13,8 @@
   </head>
   <body>
     <!-- menu crap vet inte vart den ska ligga i filen än... -->
-    <div class="draperi"></div>
 
-    <div id="menuButton">Menu</div>
+    <div id="menuButton"><a href="#">Menu</a></div>
 
     <div class="menu">
       <ul>
@@ -26,27 +25,31 @@
         <li class="menuHide"><a href="#">Support</a></li>
       </ul>
     </div>
-    <div class="vh-100 w-100 header-img"></div>
+    <div class="hideMe vh-100 w-100 header-img"></div>
     <a href="#content-start">
-      <img src="./downarrow.png" alt="" class="w-25" id="down-arrow">
+      <img src="./downarrow.png" alt="" class="hideMe w-25" id="down-arrow">
     </a>
   </header>
-  <div class="container-fluid mt-50">
+  <div class="container-fluid mt-50 hideMe">
 
     <!-- fixed area (for the margins) -->
 
     <!-- main content -->
-    <main class="row pt-50">
+    <main class="row pt-50 hideMe">
      
-      <div class="col-12 obs ctb">
-        <button id="go" class="btn btn-outline-dark btn-lg">Explore More?</button>
+      <div class="col-12 obs ctb hideMe">
+        <button id="go" class="hideMe btn btn-outline-dark btn-lg">Explore More?</button>
       </div>
     </main>
   </div>
+
+
   <script
   src="https://code.jquery.com/jquery-3.4.1.min.js"
   integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
   crossorigin="anonymous"></script>
+
+  <script src="menu.js"></script>
   <script src="./anime.min.js"></script>
   <script src="script.js"></script>
 </body>
