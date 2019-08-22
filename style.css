@@ -22,8 +22,44 @@ html {
 .z-index-2 {
   z-index: 2
 }
+
+.pct{
+  height: 400px;
+  width: 700px;
+}
+.ctb {
+  text-align: center;
+}
+#go {
+  position: relative;
+  top:45%;
+  color:white;
+  border-radius:30px;
+}
+.obs {
+  width: 100%;
+  height: 450px;
+  background: black
+}
+.myPic{
+  float:left;
+  margin-top: 10px;
+  margin-left: 20px;
+  height: 95%;
+  width: 10%;
+}
+
+.txt{
+  position: relative;
+  top:120px;
+  color:whitesmoke;
+  -webkit-text-stroke-width: 1px;
+ -webkit-text-stroke-color: red;
+}
+
 .mt-50 {
   margin-top: 10vh;
+}
 }
 #down-arrow {
   position: absolute;
