@@ -1,5 +1,6 @@
 html {
   box-sizing: border-box;
+  scroll-behavior: smooth;
 }
 
 .header-img {
@@ -23,4 +24,9 @@ html {
 }
 .mt-50 {
   margin-top: 50vh;
+}
+#down-arrow {
+  position: absolute;
+  bottom: 20px;
+  left: 37.5%;
 }
