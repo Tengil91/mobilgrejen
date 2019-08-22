@@ -3,6 +3,18 @@ html {
   scroll-behavior: smooth;
 }
 
+#logo path {
+  stroke: #fff;
+  fill: transparent;
+}
+
+#logo {
+  width: 300px;
+}
+.header-texts p {
+  opacity: 0;
+}
+
 .header-img {
   background: url('./headerimg3.jpg') center;
 }
